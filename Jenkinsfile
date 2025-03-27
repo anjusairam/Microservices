@@ -21,7 +21,7 @@ pipeline {
                     clusterName: 'EKS-1',
                     credentialsId: 'k8s-token',  // Ensure it matches the new credential
                     namespace: 'webapps',
-                    serverUrl: 'https://3B038E5EC8BBFE74265172A90B7220E6.gr7.ap-south-1.eks.amazonaws.com'
+                    serverUrl: 'https://3B038E5EC8BBFE74265172A90B7220E6.gr7.us-east-1.eks.amazonaws.com'
                 ]]) {
                     sh "kubectl get svc -n webapps"
                 }
