@@ -8,7 +8,7 @@ pipeline {
                     clusterName: 'EKS-1',
                     credentialsId: 'k8s-token',  // Update with the correct Jenkins credential ID
                     namespace: 'webapps',
-                    serverUrl: 'https://3B038E5EC8BBFE74265172A90B7220E6.gr7.ap-south-1.eks.amazonaws.com'
+                    serverUrl: 'https://3B038E5EC8BBFE74265172A90B7220E6.gr7.us-east-1.eks.amazonaws.com'
                 ]]) {
                     sh "kubectl apply -f deployment-service.yml"
                 }
